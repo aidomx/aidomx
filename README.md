@@ -30,16 +30,35 @@ npm install aidomx
 <div v-ai="hello">Hello, World!</div>
 ```
 
-```js
-// JavaScript
-import { startWithEnvironment, defineRules } from 'aidomx'
+```tsx
+'use client'
 
-const rules = defineRules({
-  root: 'hello',
-  className: 'text-blue-500 font-bold',
+import { ReactNode } from 'react'
+import { Aidomx, AidomxProvider } from '@aidomx/react'
+import { defineRules } from 'aidomx'
+
+const schema = defineRules({
+  root: 'container',
+  components: [
+    {
+      name: 'brand',
+      // Support style and className
+      className: 'font-bold text-[2.5rem] text-gray-600',
+    },
+    {
+      name: 'title',
+      className: 'text-2xl font-bold',
+    },
+  ],
 })
 
-startWithEnvironment(rules)
+export function Providers({ children }: { children: ReactNode }) {
+  return (
+    <AidomxProvider value={schema}>
+      <Aidomx>{children}</Aidomx>
+    </AidomxProvider>
+  )
+}
 ```
 
 ---
