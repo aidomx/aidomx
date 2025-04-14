@@ -61,7 +61,7 @@ Aidomx adalah sebuah ekosistem modular dan fleksibel yang dirancang untuk menyed
 
 ## Contoh Sintaks Masa Depan (Rupalang)
 
-```rpl
+```ts
 navbar {
   class: "bg-transparent"
 
@@ -78,5 +78,3 @@ navbar {
 ## Penutup
 
 Aidomx bukan hanya tentang menyederhanakan UI, tapi membawa cara baru dalam menulis interface: lebih ringan, konsisten, dan bebas dari repetisi.
-
----
