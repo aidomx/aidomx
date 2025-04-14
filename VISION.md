@@ -1,4 +1,4 @@
-# Aidomx VISION.md
+# Aidomx VISION
 
 ## Visi Utama
 
