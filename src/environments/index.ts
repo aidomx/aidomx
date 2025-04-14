@@ -1,5 +1,5 @@
 import type { Rules } from '../types'
-import { withReact, withVanilla } from './presets'
+import { withReact, withVanilla, withVite } from './presets'
 
 /**
  * Memulai AIDOMX berdasarkan environment secara async.
@@ -21,6 +21,9 @@ const startWithEnvironment = async (
     case 'vanillajs':
     case 'classic':
       return await withVanilla()
+
+    case 'vite':
+      return await withVite()
 
     case 'next':
     case 'react':

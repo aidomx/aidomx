@@ -1,5 +1,3 @@
-import { swe } from './environments'
-
 /**
  * Titik awal dari pustaka AIDOMX.
  *
@@ -17,20 +15,8 @@ import { swe } from './environments'
  * @license MIT
  * @contact github.com/aidomx
  */
-if (
-  typeof window !== 'undefined' &&
-  typeof process === 'undefined' &&
-  typeof document !== 'undefined'
-) {
-  window.addEventListener('DOMContentLoaded', async () => {
-    const schema = document.body.getAttribute('schema')
-    await swe(schema?.toString())
-  })
-}
-
 export type { Component, Config, Data, Rules } from './types'
-
 export * from './core'
+export * from './environments'
 export * from './hooks'
 export * from './utils/cookie'
-export { swe }

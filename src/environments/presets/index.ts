@@ -1,4 +1,3 @@
-import { withReact } from './withReact'
-import { withVanilla } from './withVanilla'
-
-export { withReact, withVanilla }
+export { withReact } from './withReact'
+export { withVanilla } from './withVanilla'
+export { withVite } from './withVite'

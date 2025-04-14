@@ -8,7 +8,8 @@
     "esModuleInterop": true,
     "declaration": true,
     "declarationDir": "dist",
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "removeComments": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]

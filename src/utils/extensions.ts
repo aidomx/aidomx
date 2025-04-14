@@ -23,5 +23,5 @@ export const getWithExtensions = async (file: string): Promise<any | null> => {
 }
 
 export const dynamicImport = async (file: string): Promise<any> => {
-  return await import('../' + file)
+  return await import(file)
 }

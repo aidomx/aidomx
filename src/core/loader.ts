@@ -6,7 +6,10 @@ import type { Config } from '../types'
  * Digunakan jika tidak ada konfigurasi eksternal yang ditemukan.
  */
 const DEFAULT_CONFIG: Config = {
-  path: 'public',
+  path: {
+    public: 'public',
+    query: ['globals'],
+  },
   eventMap: {},
 }
 
