@@ -1,3 +1,5 @@
 export * from './useEvents'
 export * from './useTransformer'
 export * from './useWatch'
+export * from './useRootElement'
+export * from './useWithoutRootElement'
