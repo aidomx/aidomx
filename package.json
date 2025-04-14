@@ -25,6 +25,9 @@
     "test": "jest",
     "prepublishOnly": "npm run build"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^20",
