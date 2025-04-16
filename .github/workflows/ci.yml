@@ -16,4 +16,6 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm install
+        env:
+          NPM_CONFIG_REGISTRY: https://registry.npmjs.org/
       - run: npm run build
