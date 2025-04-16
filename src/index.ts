@@ -8,8 +8,9 @@
  * @license MIT
  * @contact github.com/aidomx
  */
-export type { Component, Config, Data, Rules } from './types'
+export type * from './types'
 export * from './core'
-export * from './environments'
+export * from './commands'
+export { swe } from './schemas'
 export * from './hooks'
 export * from './utils/cookie'

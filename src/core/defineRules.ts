@@ -1,4 +1,16 @@
-import { Parse } from './parse'
 import type { Rules } from '../types'
 
-export const defineRules = (rules: Rules) => Parse(rules)
+export const defineRules = (rules: Rules) => {
+  const result: Record<string, string> = {}
+
+  if (rules?.root) return rules
+  if (!rules.components) return result
+
+  for (const rule of rules.components) {
+    if (rule?.name && rule?.className) {
+      result[rule.name] = rule.className
+    }
+  }
+
+  return result
+}

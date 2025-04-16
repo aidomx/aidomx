@@ -1,15 +1,20 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "module": "ESNext",
-    "target": "ESNext",
-    "moduleResolution": "bundler",
+    "module": "CommonJS",
+    "target": "ES2024",
+    "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
     "declaration": true,
-    "declarationDir": "dist",
-    "emitDeclarationOnly": true,
-    "removeComments": true
+    "declarationDir": "dist/types",
+    "emitDeclarationOnly": false,
+    "removeComments": false,
+    "paths": {
+      "@/*": ["./*"],
+      "@/utils/*": ["./src/utils/*"]
+    }
+    // "typeRoots": ["./src/types", "./node_modules/@types"]
   },
   "include": ["src"],
   "exclude": ["node_modules"]
