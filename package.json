@@ -5,7 +5,14 @@
     "name": "aidomx dev",
     "email": "aidomxdev@gmail.com"
   },
-  "homepage": "git+https://github.com/aidomx/aidomx.git",
+  "homepage": "https://github.com/aidomx/aidomx#readme",
+  "bugs": {
+    "url": "https://github.com/aidomx/aidomx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidomx/aidomx.git"
+  },
   "type": "module",
   "files": [
     "dist",
