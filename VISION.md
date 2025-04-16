@@ -16,8 +16,9 @@ Aidomx adalah sebuah ekosistem modular dan fleksibel yang dirancang untuk menyed
 
 ### v0.0.5 (Stabil Awal)
 
-- [x] `@aidomx/react` stabil dengan `v-ai` directive
-- [x] `@aidomx/core` memuat rule engine dasar (event, class, state binding)
+- [x] `@aidomx/cli` antarmuka user terminal atau cmd
+- [x] `@aidomx/react` manipulasi `v-ai` dengan provider
+- [x] `@aidomx/server` membawa pengembangan server lokal
 - [ ] Dokumentasi awal (README + examples)
 
 ### v1.x
@@ -29,7 +30,7 @@ Aidomx adalah sebuah ekosistem modular dan fleksibel yang dirancang untuk menyed
 
 ### v2.x
 
-- Plugin system di `@aidomx/core`
+- Plugin system di `@aidomx/vanilla`
 - Dukungan IIFE & UMD build (untuk browser biasa)
 - Runtime server (`@aidomx/server`) untuk transformasi HTML statis
 
@@ -37,7 +38,6 @@ Aidomx adalah sebuah ekosistem modular dan fleksibel yang dirancang untuk menyed
 
 - Perkenalan `@aidomx/rupalang`
 - Parsing DSL `.rpl` menjadi rules object
-- Kompatibel langsung dengan `@aidomx/core`
 - Editor support: syntax highlighting, linting
 
 ### v4.x
