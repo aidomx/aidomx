@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/aidomx?color=blue&label=npm)](https://www.npmjs.com/package/aidomx)
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/status-active-brightgreen)](#)
+[![Build Status](https://github.com/aidomx/aidomx/actions/workflows/build.yml/badge.svg)](#)
 
 **Lightweight, reactive, DOM-first UI library for the web**
 
