@@ -2,7 +2,7 @@
 
 Semua perubahan besar pada proyek ini akan didokumentasikan di sini.
 
-## [0.0.3] - 17 April 2025
+## [0.0.4] - 17 April 2025
 
 ### Added
 
