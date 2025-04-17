@@ -7,6 +7,7 @@ Semua perubahan besar pada proyek ini akan didokumentasikan di sini.
 ### Added
 
 - Menambahkan `structure` sebagai projek masa depan
+- Maaf, untuk kesalahan versi `v0.0.4` yang telah dipublish
 
 ### Changed
 
