@@ -4,57 +4,82 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Build Status](https://github.com/aidomx/aidomx/actions/workflows/ci.yml/badge.svg)](#)
 
-**Lightweight, reactive, DOM-first UI library for the web**
+**Framework builder, powered by rules, schema, and structured CLI**
 
-Aidomx adalah pustaka inti (library) yang menyediakan API ringan dan reaktif untuk memanipulasi DOM secara deklaratif. Dirancang agar fleksibel dan dapat diintegrasikan dalam berbagai environment seperti Vite, React, atau sistem build khusus lainnya.
+Aidomx adalah pustaka dan toolset modular untuk membangun framework backend/frontend secara _schema-based_ dengan pendekatan _rules_, _CLI_, dan _server runtime_. Fokus utamanya adalah pada pengembangan berbasis **Node.js**, namun juga tersedia dukungan browser sebagai pelengkap.
 
 ---
 
 ## Fitur Utama
 
-- **Deklaratif** — Gunakan atribut seperti `v-ai` untuk menghubungkan DOM dengan behavior dinamis.
-- **Ringan & Cepat** — Tanpa dependensi besar, cocok untuk proyek kecil maupun berskala besar.
-- **Fleksibel** — Dapat digunakan di berbagai lingkungan: HTML murni, framework modern, atau CLI.
-- **Terintegrasi** — Didukung oleh pustaka turunan untuk React, CLI, dan Server.
+- **Rules & Schema-Based** — Organisasi logic dan struktur berbasis aturan.
+- **CLI & Server Runtime** — Untuk pengembangan lokal, scaffolding, dan runtime ringan.
+- **Modular & Terstruktur** — Meniru pola project Android yang scalable.
+- **Dual Ecosystem** — Mendukung penggunaan di Node.js maupun browser.
+
+---
+
+## Ekosistem Aidomx
+
+### 1. Node.js Ecosystem (Fokus utama)
+
+| Package          | Status     | Keterangan                                       |
+| ---------------- | ---------- | ------------------------------------------------ |
+| `@aidomx/cli`    | ✅ Selesai | CLI utility untuk scaffolding dan rule execution |
+| `@aidomx/server` | ✅ Selesai | Server ringan untuk menjalankan rule + schema    |
+
+> Ekosistem ini digunakan sebagai fondasi utama pengembangan framework.
+
+---
+
+### 2. Browser Ecosystem (Eksperimen)
+
+| Package           | Status     | Keterangan                                       |
+| ----------------- | ---------- | ------------------------------------------------ |
+| `@aidomx/react`   | ✅ Selesai | Provider React untuk integrasi kontekstual       |
+| `@aidomx/vite`    | ❌ Belum   | Plugin Vite untuk runtime transformasi           |
+| `@aidomx/vanilla` | ❌ Belum   | Implementasi murni Aidomx untuk HTML/JS langsung |
+
+> Ekosistem browser bersifat pelengkap dan tidak wajib untuk penggunaan CLI/Server.
+
+---
+
+## Struktur Project (Preview)
+
+Struktur masa depan project akan mengikuti pola modular seperti Android:
+
+```
+my-project/
+├── app/
+│   ├── core/        ← logic bisnis utama, API, hooks, dsb
+│   └── etc/         ← helper, plugin, constant, dsb
+├── res/             ← resource styling
+│   ├── default/     ← light/system style (CSS/TS)
+│   ├── dark/
+│   ├── bootstrap/
+│   ├── tailwindcss/
+│   ├── material/
+│   └── index.ts     ← menentukan style/theme yang aktif
+├── .env.local       ← konfigurasi runtime (WEB_SCHEMA, PORT, dsb)
+├── package.json
+├── tsconfig.json
+```
+
+Struktur ini memungkinkan isolasi logika, styling, dan konfigurasi secara bersih dan scalable.
 
 ---
 
 ## Instalasi
 
 ```bash
-npm install aidomx
+npm install @aidomx/cli --global
 ```
-
----
-
-## Penggunaan Dasar
-
-```html
-<!-- HTML -->
-<div v-ai="hello">Hello, World!</div>
-```
-
-> Untuk environment React atau Vite, gunakan paket pendukung seperti `@aidomx/react` atau `@aidomx/vite`.
-
----
-
-## Integrasi & Ekosistem
-
-Berikut adalah daftar paket turunan dalam ekosistem Aidomx beserta status dukungannya:
-
-| Package             | Status      | Keterangan                                   |
-|---------------------|-------------|----------------------------------------------|
-| `@aidomx/cli`       | ✅ Selesai  | CLI utilitas untuk pengembangan & setup awal |
-| `@aidomx/server`    | ✅ Selesai  | Server ringan untuk pengembangan lokal       |
-| `@aidomx/react`     | ✅ Selesai  | Provider React untuk integrasi kontekstual   |
-| `@aidomx/vite`      | ❌ Belum    | Plugin Vite untuk optimalisasi runtime       |
-| `@aidomx/vanilla`   | ❌ Belum    | Implementasi murni untuk HTML/JS langsung    |
 
 ---
 
 ## Dokumentasi
 
-Dokumentasi lengkap tersedia di:
+Dokumentasi lengkap tersedia di:  
 [https://github.com/aidomx/aidomx](https://github.com/aidomx/aidomx)
 
 ---
@@ -63,6 +88,4 @@ Dokumentasi lengkap tersedia di:
 
 MIT © 2025 [@aidomx](https://github.com/aidomx)
 
-> "DOM tidak perlu rumit. Aidomx membawa kesederhanaan dan kontrol kembali ke tangan developer."
-
-
+> "Aidomx bukan hanya framework, tapi pondasi untuk membangun ekosistem dengan kendali penuh."

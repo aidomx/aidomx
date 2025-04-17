@@ -1,14 +1,12 @@
 import { registry } from './registry'
 
 /**
- * Memulai AIDOMX berdasarkan environment secara async.
+ * Start With Environment
  *
- * Cocok digunakan untuk environment berbasis browser (seperti vanilla JS, classic setup).
- * Fungsi ini otomatis membaca konfigurasi `aidomx.config.json` dan file aturan global.
+ * Adalah sebuah entry file yang akan digunakan untuk
+ * menentukan environment yang sedang dibuat.
  *
- * @param {string} [schema=''] - Nama skema environment, seperti `'vanilla'`, `'classic'`
- *
- * @example
- * await startWithEnvironment('vanilla')
+ * @param schema string
+ * @returns module
  */
 export const swe = (schema: string = '') => registry[schema]
