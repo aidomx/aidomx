@@ -1,6 +1,7 @@
 import prompts from 'prompts'
 import { writeFileSync, mkdirSync, existsSync } from 'fs'
 import path from 'path'
+import pkg from '../../package.json'
 
 export const Initialize = async () => {
   const response = await prompts([
@@ -48,6 +49,7 @@ export const Initialize = async () => {
   const envPath = path.join(projectPath, '.env.local')
   const resPath = path.join(projectPath, 'res')
   const appPath = path.join(projectPath, 'app')
+  const pkgPath = path.join(projectPath, 'package.json')
 
   if (!isCancelled) {
     if (!existsSync(projectPath)) mkdirSync(projectPath, { recursive: true })
@@ -64,6 +66,18 @@ export const Initialize = async () => {
     writeFileSync(
       path.join(resPath, 'index.ts'),
       `export const theme = "${response.ui}"\n`
+    )
+
+    writeFileSync(
+      pkgPath,
+      `{
+        "name": "${response.projectName}",
+        "version": "1.0.0",
+        "main": "index.js",
+        "devDependencies": {
+          "aidomx": "^${pkg.version}"
+        }
+      }`
     )
 
     console.log(

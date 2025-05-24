@@ -20,7 +20,7 @@ export const printServerInfo = (port: number, version = '0.0.1') => {
   const protocol = 'http://'
 
   const content = [
-    `${chalk.cyan('@aidomx/server')} ${chalk.gray(version)}`,
+    `${chalk.cyan('aidomx')} ${chalk.gray(version)}`,
     `${chalk.gray('→')} Local   : ${chalk.green(`${protocol}${localIP}:${port}`)}`,
     `${chalk.gray('→')} Network : ${chalk.green(`${protocol}${publicIP}:${port}`)}`,
   ].join('\n')

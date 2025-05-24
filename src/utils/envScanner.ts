@@ -17,18 +17,23 @@ export const envScanner = () => {
 
 export const scanEnvFiles = (): envScanResult => {
   const cwd = process.cwd()
+  const result: Record<string, any> = {}
 
   for (const file of CANDIDATES) {
     const fullPath = path.join(cwd, file)
 
-    if (fs.existsSync(fullPath)) {
-      return {
+    const fileCheck = fs.existsSync(fullPath)
+
+    if (fileCheck) {
+      return Object.assign(result, {
         status: true,
         fileName: file,
         filePath: fullPath,
-      }
+      })
+    } else {
+      Object.assign(result, { status: false })
     }
   }
 
-  return { status: false }
+  return result
 }

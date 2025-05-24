@@ -1,22 +1,56 @@
-import { createServerApp } from '@aidomx/server'
+import type { AppInstance, Request, Response } from '@/types'
+import { envScanner } from '@/utils/envScanner'
+import { printServerInfo } from '@/utils/printServerInfo'
+import { createServerApp } from '@/server'
 import chalk from 'chalk'
 import { performance } from 'perf_hooks'
-import { printServerInfo } from '@/utils/printServerInfo'
-import { envScanner } from '@/utils/envScanner'
-import type { Request, Response } from '@/src/types'
+import { createServer } from 'net'
+
+type WebInstance = {
+  protocol: string
+  hostname: string
+  port: number
+}
 
 const SERVER_VERSION = '0.0.1'
-const web = {
+
+const web: WebInstance = {
   protocol: process.env.PROTOCOL || 'http://',
   hostname: process.env.HOSTNAME || '127.0.0.1',
   port: Number(process.env.PORT || 3000),
 }
 
 /**
+ * Get Available port
+ *
+ * Analisis port yang sedang aktif
+ *
+ * @param port number
+ * @returns boolean
+ */
+export const getAvailablePort = (port: number): Promise<boolean> => {
+  return new Promise((resolve) => {
+    const server = createServer()
+    server.once('error', () => resolve(false))
+    server.once('listening', () => {
+      server.close()
+      resolve(true)
+    })
+
+    server.listen(port)
+  })
+}
+
+/**
  * Menghitung waktu yang dibutuhkan untuk memulai server.
  * @returns Durasi dalam detik sebagai string.
  */
-const loading = (start: number) => (performance.now() - start / 1000).toFixed(2)
+const loading = (start: number) => {
+  const end = performance.now()
+  const delay = end - start
+
+  return delay.toFixed(2)
+}
 
 /**
  * Menjalankan pemindaian file `.env` dan menampilkan informasi awal server.
@@ -61,7 +95,11 @@ const reportStartServer = (start: number) => {
  * - Akan menampilkan halaman error jika file `.env` tidak ditemukan.
  * - Jika ada, akan menampilkan pesan 404 default.
  */
-export const devServer = () => {
+export const devServer = async (): Promise<{
+  app: AppInstance
+  env: ReturnType<typeof reportStartServer>
+  web: WebInstance
+}> => {
   const app = createServerApp()
   const start = performance.now()
   const report = reportStartServer(start)
@@ -81,9 +119,11 @@ export const devServer = () => {
     }
   })
 
-  printServerInfo(web.port, SERVER_VERSION)
+  const isFree = await getAvailablePort(web.port)
+  const port = !isFree ? web.port + 1 : web.port
 
-  app.listen(web.port, () => report.message())
+  printServerInfo(port, SERVER_VERSION)
+  app.listen(port, () => report.message())
 
-  return app
+  return { app, env: report, web }
 }

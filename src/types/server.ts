@@ -25,9 +25,7 @@ export type Method = Callback
 /**
  * Konfigurasi opsional yang dapat digunakan dalam aplikasi.
  */
-export type Settings = {
-  [key: string]: any
-}
+export type Settings<K extends string, T extends any = any> = Record<K, T>
 
 /**
  * Definisi method routing dasar seperti GET dan POST.
@@ -75,12 +73,12 @@ export interface AppInstance {
    * Menyimpan atau menerapkan konfigurasi ke dalam aplikasi.
    * @param options Obyek konfigurasi
    */
-  use: (options: Settings) => void
+  use(...options: any[]): void
 
   /**
    * Direktori utama tempat aplikasi dijalankan.
    */
-  dirname: string
+  dirname(dir: string): string
 
   /**
    * Fungsi utama yang menangani seluruh request.
@@ -90,7 +88,7 @@ export interface AppInstance {
   /**
    * Routing request berdasarkan method dan path.
    */
-  route: (req: IncomingMessage, res: ServerResponse) => void
+  route(req: IncomingMessage, res: ServerResponse): Record<string, any>
 
   /**
    * Method HTTP yang sedang aktif untuk request saat ini.
@@ -105,7 +103,7 @@ export interface AppInstance {
   /**
    * Menyimpan konfigurasi aplikasi secara umum.
    */
-  settings: Settings
+  settings: Settings<any>
 
   /**
    * Fungsi fallback ketika rute tidak ditemukan.
@@ -120,12 +118,14 @@ export interface AppInstance {
   /**
    * Fungsi untuk membaca dan mem-parsing body dari request.
    */
-  bodyParser: (req: IncomingMessage) => Promise<any>
+  bodyParser: (req: IncomingMessage, cb: BodyParserCallback) => void
 
   /**
    * (Opsional) Sistem routing modular tambahan.
    */
   Router?: RouterMethods
+
+  version?: string | number
 }
 
 export type Request = IncomingMessage

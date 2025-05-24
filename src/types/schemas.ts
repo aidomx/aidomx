@@ -1,1 +1,1 @@
-export type Registry = Record<string, string>
+export type Registry = Record<string, Function>

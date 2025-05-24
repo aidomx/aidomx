@@ -2,20 +2,20 @@
   "compilerOptions": {
     "outDir": "dist",
     "module": "CommonJS",
-    "target": "ES2020",
-    "moduleResolution": "node",
+    "target": "ES2017",
     "strict": true,
     "esModuleInterop": true,
     "declaration": true,
     "declarationDir": "dist/types",
     "emitDeclarationOnly": false,
     "removeComments": false,
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./*"],
-      "@/utils/*": ["./src/utils/*"]
+      "@/*": ["./*"]
     }
-    // "typeRoots": ["./src/types", "./node_modules/@types"]
   },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src/cli.example.ts"]
 }
