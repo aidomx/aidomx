@@ -7,10 +7,11 @@ my-project/
 ├── app/
 │   └── index.ai         ← logic entry
 ├── res/             ← resource
-│   └── index.ai     ← menentukan style/theme yang aktif
-├── .env.local       ← konfigurasi runtime (WEB_SCHEMA, PORT, dsb)
+│   └── index.ai     ← entry resource
+├── .env.local       ← konfigurasi runtime (WEB_ENGINE, PORT, dsb)
 ├── package.json
 ├── tsconfig.json
+├── index.ai ← file utama yang akan dimuat pertama kali.
 ```
 
 Struktur ini memungkinkan isolasi logika, styling, dan konfigurasi secara bersih dan scalable.
