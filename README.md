@@ -21,7 +21,7 @@
 ## Dokumentasi
 
 Dokumentasi lengkap tersedia di:  
-[docs](https://github.com/aidomx/aidomx/blob/docs/README.md)
+[docs](https://github.com/aidomx/aidomx/blob/main/docs/README.md)
 
 ---
 
