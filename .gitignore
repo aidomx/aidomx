@@ -9,5 +9,6 @@ tests/*
 
 *.tgz
 *.ai
+*.swp
 nodemon.json
 src/cli.example.ts
