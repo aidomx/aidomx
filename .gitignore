@@ -1,14 +1,3 @@
-node_modules/
-dist/
-.env
-.env.local
-backup
-.turbo
-tests/*
-!README.md
-
-*.tgz
+app
 *.ai
 *.swp
-nodemon.json
-src/cli.example.ts
