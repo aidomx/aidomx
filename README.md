@@ -9,6 +9,6 @@
 
 ## 🔗 Links
 
-- [Project Utama](https://github.com/aidomx/rupa)
+- [Rupa language](https://github.com/aidomx/rupa)
 - [Core Engine](https://github.com/aidomx/core)
-- [Core Engine](https://github.com/aidomx/generatecv)
+- [Generate CV](https://github.com/aidomx/generatecv)
