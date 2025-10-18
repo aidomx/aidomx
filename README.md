@@ -1,7 +1,7 @@
 # Hi there! 👋
 
-**Nama:** Aidomx
-**Minat:** Language Design, Compilers, Systems Programming
+- **Nama** : Aidomx
+- **Minat** : Language Design, Compilers, Systems Programming
 
 ## 📊 Bahasa yang Digunakan
 
