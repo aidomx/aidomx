@@ -20,37 +20,39 @@ I design programming languages, write compilers, and dive deep into systems prog
 
 ## Featured Projects
 
-### [🔤 Rupa Language](https://github.com/aidomx/rupa)
+### [Rupa Language](https://github.com/aidomx/rupa)
 
 A custom programming language built from the ground up — exploring new paradigms in language design and implementation. From lexer to runtime, every component crafted with care.
 
-### [🤖 Terai](https://github.com/aidomx/terai)
+### [Terai](https://github.com/aidomx/terai)
 
 Terminal AI assistant powered by Gemini and OpenAI APIs — bringing AI capabilities directly to your command line. Code faster, debug smarter, all without leaving the terminal.
 
-### [📄 Generate CV](https://github.com/aidomx/generatecv)
+### [Generate CV](https://github.com/aidomx/generatecv)
 
 Automated CV generation tool — because even developers need to market themselves efficiently. Turn your data into professional documents instantly.
 
-### [⌨️ Vimconfig](https://github.com/aidomx/vimconfig)
+### [Vimconfig](https://github.com/aidomx/vimconfig)
 
 My battle-tested Vim configuration — optimized for systems programming and compiler development workflows. Efficiency meets elegance.
 
-## 📊 Contribution Activity
+## Contribution Activity
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=aidomx&theme=redical&hide_border=true)
 
-## 🔥 Recent Contributions
+## Recent Contributions
 
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
-## 🛠️ Languages & Tools
+## Languages & Tools
 
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+
+<!--![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)-->
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Vim](https://img.shields.io/badge/Vim-019733?style=for-the-badge&logo=vim&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
