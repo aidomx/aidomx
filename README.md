@@ -9,7 +9,7 @@ I design programming languages, write compilers, and dive deep into systems prog
 ## Tech Stack & Activity
 
 <div align="center">
-  
+
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=aidomx&hide=html,css&layout=compact&theme=radical&langs_count=8)
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=aidomx&show_icons=true&theme=radical&count_private=true&hide_border=true)
@@ -32,7 +32,7 @@ Terminal AI assistant powered by Gemini and OpenAI APIs — bringing AI capabili
 
 Automated CV generation tool — because even developers need to market themselves efficiently. Turn your data into professional documents instantly.
 
-### [Vimconfig](https://github.com/aidomx/vimconfig)
+### [Vimx](https://github.com/aidomx/vimx)
 
 My battle-tested Vim configuration — optimized for systems programming and compiler development workflows. Efficiency meets elegance.
 
@@ -63,8 +63,8 @@ My battle-tested Vim configuration — optimized for systems programming and com
 ---
 
 <div align="center">
-  
-*"First, solve the problem. Then, write the code. Finally, optimize the compiler."*
+
+_"First, solve the problem. Then, write the code. Finally, optimize the compiler."_
 
 ![Profile Views](https://komarev.com/ghpvc/?username=aidomx&color=red&style=for-the-badge)
 
