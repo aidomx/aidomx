@@ -1,12 +1,14 @@
-# Hi there! 👋
+# Hai! 👋
 
-Saya **Aidomx** — passionate about building languages, compilers, and low-level systems that make computers dance to my tune.
+Saya **Aidomx** — saya suka membangun bahasa pemrograman, compiler, dan sistem tingkat rendah untuk memahami bagaimana perangkat lunak bekerja dari dasarnya.
 
-## What I Do
+## Yang Saya Kerjakan
 
-I design programming languages, write compilers, and dive deep into systems programming. My work spans from language theory to bare-metal implementation — because understanding how software works at every layer is what makes it truly powerful.
+Saya merancang bahasa pemrograman, mengembangkan compiler, dan mendalami pemrograman sistem. Saya tertarik pada proses membangun sesuatu dari awal, mulai dari desain bahasa dan parser hingga runtime dan implementasinya di level rendah.
 
-## Tech Stack & Activity
+Bagi saya, memahami bagaimana setiap lapisan bekerja adalah bagian penting dari proses membangun perangkat lunak yang benar-benar saya pahami.
+
+## Tech Stack & Aktivitas
 
 <div align="center">
 
@@ -18,34 +20,34 @@ I design programming languages, write compilers, and dive deep into systems prog
 
 </div>
 
-## Featured Projects
+## Proyek Unggulan
 
 ### [Rupa Language](https://github.com/aidomx/rupa)
 
-A custom programming language built from the ground up — exploring new paradigms in language design and implementation. From lexer to runtime, every component crafted with care.
+Bahasa pemrograman yang saya bangun dari awal. Rupa menjadi ruang untuk bereksperimen dengan desain bahasa, sintaks, compiler, dan runtime — dengan setiap bagian dibangun untuk memahami bagaimana semuanya bekerja.
 
 ### [Terai](https://github.com/aidomx/terai)
 
-Terminal AI assistant powered by Gemini and OpenAI APIs — bringing AI capabilities directly to your command line. Code faster, debug smarter, all without leaving the terminal.
+Asisten AI untuk terminal yang menggunakan API Gemini dan OpenAI. Terai membawa kemampuan AI langsung ke terminal untuk membantu menulis kode, memahami masalah, dan melakukan debugging tanpa harus berpindah dari lingkungan kerja.
 
 ### [Generate CV](https://github.com/aidomx/generatecv)
 
-Automated CV generation tool — because even developers need to market themselves efficiently. Turn your data into professional documents instantly.
+Alat untuk membuat CV secara otomatis. Data yang sudah disiapkan dapat diubah menjadi dokumen CV dengan lebih cepat dan praktis.
 
 ### [Vimx](https://github.com/aidomx/vimx)
 
-My battle-tested Vim configuration — optimized for systems programming and compiler development workflows. Efficiency meets elegance.
+Konfigurasi Vim yang saya kembangkan untuk kebutuhan pemrograman sistem dan pengembangan compiler. Fokusnya adalah workflow yang sederhana, cepat, dan sesuai dengan cara saya bekerja.
 
-## Contribution Activity
+## Aktivitas Kontribusi
 
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=aidomx&theme=redical&hide_border=true)
 
-## Recent Contributions
+## Kontribusi Terbaru
 
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
-## Languages & Tools
+## Bahasa & Tools
 
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -56,7 +58,7 @@ My battle-tested Vim configuration — optimized for systems programming and com
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)-->
 
-## Connect
+## Terhubung
 
 [![GitHub](https://img.shields.io/badge/GitHub-aidomx-181717?style=for-the-badge&logo=github)](https://github.com/aidomx)
 
@@ -64,7 +66,7 @@ My battle-tested Vim configuration — optimized for systems programming and com
 
 <div align="center">
 
-_"First, solve the problem. Then, write the code. Finally, optimize the compiler."_
+_"Pertama, selesaikan masalahnya. Kemudian, tulis kodenya. Terakhir, optimalkan compilernya."_
 
 ![Profile Views](https://komarev.com/ghpvc/?username=aidomx&color=red&style=for-the-badge)
 
